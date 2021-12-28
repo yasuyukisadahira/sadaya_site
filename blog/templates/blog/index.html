@@ -10,9 +10,107 @@
 
     <title>{{title}}</title>
 </head>
-<body class="container">
-    <nav class="navbar navbar-extend navbar-light bg-light">
-        <ul class="navbar-nav"></ul>
-    </nav>
+<body>
+    <header class="mb-4">
+        <nav class="navbar navbar-expand navbar-dark bg-secondary">
+            <div class="container ">
+            <a class="navbar-brand" href="{% url 'index' %}">sadaya official site</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">top</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">study</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">site map</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <article class="col-sm-8 mb-4">
+                <header class="card mb-4">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="..." alt="...">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    This site create from “GCP, Django, Chromebook”.
+                                </h5>
+                                <p class="card-text">こんにちは、Chromebook愛好家の『さだや』です。
+                            当サイトでは現代社会の3大ビジネススキル、
+                            『IT』『投資』『法律』に関する記事を発信します。</p>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <aside class="col-sm-4">
+                <div class="card mb-3">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">sadaya</h5>
+                        <p class="card-text">
+                            「IT・投資・法律の知識が、現代社会を生き抜くための唯一のサバイバル技術」をテーマに執筆。Chromebookひとつでどこまでできるか？という隠れテーマをサイトでもあります。
+                        </p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <footer class="mt-4">
+        <div class="px-4 bg-secondary">
+            <p class="container text-center text-light"><small>&copy; 2021 sadaya</small></p>
+        </div>
+    </footer>
 </body>
 </html>
